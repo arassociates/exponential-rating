@@ -9,7 +9,7 @@
                             <!-- Logo -->
                             <div class="flex-shrink-0 flex items-center">
                                 <Link :href="route('dashboard')">
-                                    <BreezeApplicationLogo class="block h-9 w-auto" />
+                                    <img src="images/logo.png" class="block h-9 w-auto">
                                 </Link>
                             </div>
 
@@ -17,6 +17,9 @@
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
+                                </BreezeNavLink>
+                                <BreezeNavLink :href="route('about')" :active="route().current('about')">
+                                    About
                                 </BreezeNavLink>
                             </div>
                         </div>
@@ -63,6 +66,9 @@
                     <div class="pt-2 pb-3 space-y-1">
                         <BreezeResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
+                        </BreezeResponsiveNavLink>
+                        <BreezeResponsiveNavLink :href="route('about')" :active="route().current('about')">
+                            About
                         </BreezeResponsiveNavLink>
                     </div>
 
